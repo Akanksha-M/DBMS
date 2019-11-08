@@ -1,0 +1,45 @@
+{% extends 'layout.html' %}
+
+{% block title %}Donate Page{% endblock %}
+
+{% block content %}
+
+<form action="{{ url_for('donate') }}" method="POST" autocomplete="off">
+	<div class="container">
+	  <div class="form-group">
+	    <label for="exampleFormControlInput1">Name</label>
+	    <input type="text" name='name' class="form-control" id="exampleFormControlInput1" placeholder="John Smith">
+	  </div>
+	  <div class="form-group">
+	    <label for="exampleFormControlSelect1">Project Name</label>
+	    <select class="form-control" name='pname' id="exampleFormControlSelect1">
+	      <option>Fund Raiser For Kids</option>
+	      <option>Feeding India</option>
+	      <option>Save Water</option>
+	      <option>Kids For Tigers</option>
+	    </select>
+	  </div>
+	  <div class="form-group">
+	    <label for="exampleFormControlInput1">Amount</label>
+	    <input type="text" name='amount' class="form-control" id="exampleFormControlInput1" placeholder="In Rupees">
+	  </div>
+	  <div class="form-group">
+	    <label for="exampleFormControlInput1">email</label>
+	    <input type="text" name='email' class="form-control" id="exampleFormControlInput1" placeholder="jsmith@gmail.com">
+	  </div>
+	  <div class="form-group">
+			<label for="exampleFormControlInput1">Address</label>
+			<input type="text" name='address' class="form-control" id="exampleFormControlInput1" placeholder="City">
+		</div>
+		<div class="form-group">
+			<label for="exampleFormControlInput1">Phone</label>
+			<input type="text" name='phone' class="form-control" id="exampleFormControlInput1" placeholder="1234567890">
+		</div>
+		<div class="form-group">
+			<label for="exampleFormControlInput1">Role</label>
+			<input type="text" name='role' class="form-control" id="exampleFormControlInput1" placeholder="Designation">
+		</div>
+	</div>
+	<button type="submit" class="btn btn-info">Submit</button>
+</form>
+{% endblock %}
