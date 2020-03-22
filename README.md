@@ -1,5 +1,5 @@
-# DBMS
-NGO management system
+# NGO management system
+
 About : This project was built to help NGOs maintain a database for their various donations and possible projects. It enlists the 
         the projects that are run by the ngo that require either monetary support or support in any other way.
         The project has a website that helps users login with their credentials and then gain access to the various running and upcoming 
